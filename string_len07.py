@@ -8,4 +8,8 @@ def main(s1,s2,s3):
     Returns:
         string
     """
-    return
+    ans = s3
+    if len(s1)>len(s2):
+        ans = f'[{s1}, {s2}]'
+    
+    return ans

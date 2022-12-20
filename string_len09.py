@@ -9,4 +9,5 @@ def main(num1, num2):
     Returns:
         str: answer
     """
-    return
+    ans = int(num1)+int(num2)
+    return str(ans)

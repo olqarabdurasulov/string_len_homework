@@ -8,4 +8,10 @@ def main(s):
     Returns:
         str: answer
     """
-    return
+    ans = ""
+    if len(s)%2 == 1:
+        ans = s[len(s)//2]
+
+    else:
+        ans = s[len(s)//2 -1: len(s)//2 +1]
+    return ans

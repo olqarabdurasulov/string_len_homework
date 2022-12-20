@@ -8,4 +8,12 @@ def main(s):
     Returns:
         bool: answer
     """
-    return
+    s1 = s[0]
+    s2 = s[1]
+    s3 = s[2]
+    ans = False
+
+    if (s3+s2+s1) == s:
+        ans = True
+    
+    return ans
