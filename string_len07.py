@@ -9,25 +9,25 @@ def main(s1,s2,s3):
         string
     """
     ans = '[]'
-    if len(s1)%2 == 0 and len(s2)%2 == 0 and len(s3)%2 == 0:
+    if len(s1)%2 == 1 and len(s2)%2 == 1 and len(s3)%2 == 1:
         ans = f'[{s1}, {s2}, {s3}]'
     
-    elif len(s1)%2 == 0 and len(s2)%2 == 0:
+    elif len(s1)%2 == 1 and len(s2)%2 == 1:
         ans = f'[{s1}, {s2}]'
 
-    elif len(s1)%2 == 0 and len(s3)%2 == 0:
+    elif len(s1)%2 == 1 and len(s3)%2 == 1:
         ans = f'[{s1}, {s3}]'
 
-    elif len(s2)%2 == 0 and len(s3)%2 == 0:
+    elif len(s2)%2 == 1 and len(s3)%2 == 1:
         ans = f'[{s2}, {s3}]'
 
-    elif len(s1)%2 == 0:
+    elif len(s1)%2 == 1:
         ans = f'[{s1}]'
 
-    elif len(s2)%2 == 0:
+    elif len(s2)%2 == 1:
         ans = f'[{s2}]'
 
-    elif len(s3)%2 == 0:
+    elif len(s3)%2 == 1:
         ans = f'[{s3}]'
 
     return ans
