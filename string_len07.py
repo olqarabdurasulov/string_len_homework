@@ -8,8 +8,26 @@ def main(s1,s2,s3):
     Returns:
         string
     """
-    ans = s3
-    if len(s1)>len(s2):
-        ans = f'[{s1}, {s2}]'
+    ans = '[]'
+    if len(s1)%2 == 0 and len(s2)%2 == 0 and len(s3)%2 == 0:
+        ans = f'[{s1}, {s2}, {s3}]'
     
+    elif len(s1)%2 == 0 and len(s2)%2 == 0:
+        ans = f'[{s1}, {s2}]'
+
+    elif len(s1)%2 == 0 and len(s3)%2 == 0:
+        ans = f'[{s1}, {s3}]'
+
+    elif len(s2)%2 == 0 and len(s3)%2 == 0:
+        ans = f'[{s2}, {s3}]'
+
+    elif len(s1)%2 == 0:
+        ans = f'[{s1}]'
+
+    elif len(s2)%2 == 0:
+        ans = f'[{s2}]'
+
+    elif len(s3)%2 == 0:
+        ans = f'[{s3}]'
+
     return ans
